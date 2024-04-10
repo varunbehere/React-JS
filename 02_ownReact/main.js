@@ -1,4 +1,7 @@
-const root = document.querySelector('#div')
+console.log('Script Connected');
+
+const root = document.querySelector('#root')
+console.log(root)
 const reactElement = {
     type : 'a',
     props : {
@@ -8,9 +11,11 @@ const reactElement = {
     text : 'Click me'
 }
 function addElement(element, location) {
-    const element = document.createElement(`${this.element.type}`)
-    const location = this.location
-    element.innerHTML = `value = '${this.element.text}' href ='${this.element.props.href} target = '${this.element.props.target}'`
-    location.appendChild(element)
+    let newElement = document.createElement(element.type)
+    newElement.innerText = element.text
+    newElement.href = element.props.href
+    newElement.target = element.props.target
+    console.log(newElement)
+    location.appendChild(newElement)
 }
 addElement(reactElement,root)
