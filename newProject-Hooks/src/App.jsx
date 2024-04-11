@@ -11,6 +11,7 @@ function App() {
   }
   const delValue = ()=>{
     setCount(count-1)
+    
   }
   return (
     <>
