@@ -8,6 +8,7 @@
   import Contact from './Contact/Contact.jsx';
   import { Route } from 'react-router-dom';  
   import User from './User/User.jsx';
+  import Github from './Github/Github.jsx';
   // const router = createBrowserRouter([
   //   {
   //     path :'/',
@@ -36,6 +37,7 @@
         <Route path = "/about"              element = {<About/>}/>
         <Route path = "/contact-us"         element = {<Contact/>}/>
         <Route path = "/user/:userid"       element = {<User/>}/>
+        <Route path = "/github"             element = {<Github/>}/>
       </Route>
     )
   )
