@@ -1,8 +1,23 @@
-# React + Vite
+# About
+This project is More of Theme Switcher using Context API in these the new thing is that <b>we have written all the context related code in one file only </b>.
+That is - 
+- createContext
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```javascript
+    export const ThemeContext = React.createContext({
+        thememode : 'light',
+        lighttheme : ()=>{},
+        darkTheme:  ()=>{},
+    })
+```
+- Context.Provider
+```javascript
+export const ThemeContextProvider = ThemeContext.Provider   
+```
+- useContext()
+```javascript
+export default function useTheme (){
+    return useContext (ThemeContext)
+}
+```
+Refer file - [Click Me]()
