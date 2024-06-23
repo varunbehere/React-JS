@@ -11,8 +11,10 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
-    const usersData = JSON.parse(localStorage.getItem("users")) || [];
-    setUsers(usersData);
+    const usersData = JSON.parse(localStorage.getItem("users"));
+    if (usersData && usersData.length) {
+      setUsers(usersData);
+    }
   }, []);
 
   useEffect(() => {

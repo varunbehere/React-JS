@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   const handleLogout = () => {
     logout(currentUser.email);
-    navigate('/login'); // Navigate to login after logout
+    navigate('/login');
   };
 
   return (

@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSignup = (e) => {
     e.preventDefault();
     registerUser(email, userName, password);
-    navigate('/login'); // Navigate to login after signup
+    navigate('/login'); 
   };
 
   const handleLoginClick = () => {
