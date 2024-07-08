@@ -27,8 +27,8 @@ const SignUp = () => {
           />
           <input
             className='bg-gray-200 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500'
-            type="text"
-            placeholder='Username/Email'
+            type="email"
+            placeholder='Email'
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -39,7 +39,7 @@ const SignUp = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button 
+          <button
             className='bg-blue-500 text-white px-5 py-3 rounded-md w-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
             type="submit"
           >

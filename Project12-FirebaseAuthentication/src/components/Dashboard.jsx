@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Dashboard() {
+function Dashboard(currentUserEmail) {
   return (
     <div>
-      
+      <h1>Welcome {currentUserEmail} !</h1>
+      <button className='bg-red-600'>Logout</button>
     </div>
   )
 }
